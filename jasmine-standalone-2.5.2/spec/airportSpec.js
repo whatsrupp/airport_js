@@ -1,6 +1,9 @@
+'use strict';
+
 describe('Airport', function() {
 
   var airport;
+  var plane;
   // var plane = jasmine.createSpy('plane', ['land', 'take_off']);
 
 
