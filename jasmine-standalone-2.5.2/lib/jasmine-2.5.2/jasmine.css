@@ -6,7 +6,7 @@ body { overflow-y: scroll; }
 .jasmine_html-reporter p, .jasmine_html-reporter h1, .jasmine_html-reporter h2, .jasmine_html-reporter h3, .jasmine_html-reporter h4, .jasmine_html-reporter h5, .jasmine_html-reporter h6 { margin: 0; line-height: 14px; }
 .jasmine_html-reporter .jasmine-banner, .jasmine_html-reporter .jasmine-symbol-summary, .jasmine_html-reporter .jasmine-summary, .jasmine_html-reporter .jasmine-result-message, .jasmine_html-reporter .jasmine-spec .jasmine-description, .jasmine_html-reporter .jasmine-spec-detail .jasmine-description, .jasmine_html-reporter .jasmine-alert .jasmine-bar, .jasmine_html-reporter .jasmine-stack-trace { padding-left: 9px; padding-right: 9px; }
 .jasmine_html-reporter .jasmine-banner { position: relative; }
-.jasmine_html-reporter .jasmine-banner .jasmine-title { background: url('file:///Users/seanblundell/Dropbox/DevDev/Projects/Javascript/airport_js/jasmine-standalone-2.5.2/lib/jasmine-2.5.2/apple-icon.png') no-repeat, none; -moz-background-size: 100%; -o-background-size: 100%; -webkit-background-size: 100%; background-size: 100%; display: block; float: left; width: 200px; height: 200px; }
+.jasmine_html-reporter .jasmine-banner .jasmine-title { background: url('./apple-icon.png') no-repeat, none; -moz-background-size: 100%; -o-background-size: 100%; -webkit-background-size: 100%; background-size: 100%; display: block; float: left; width: 50px; height: 50px; }
 .jasmine_html-reporter .jasmine-banner .jasmine-version { margin-left: 14px; position: relative; top: 6px; }
 .jasmine_html-reporter #jasmine_content { position: fixed; right: 100%; }
 .jasmine_html-reporter .jasmine-version { color: #aaa; }

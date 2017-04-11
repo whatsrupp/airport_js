@@ -11,7 +11,7 @@ describe ('Feature Test:', function() {
   });
 
   it('successfully lands a plane', function() {
-    plane.land(airport);
-    expect(airport.planes()).toContain(plane);
+    airport.land(plane);
+    expect(airport.planes).toContain(plane);
   });
 });

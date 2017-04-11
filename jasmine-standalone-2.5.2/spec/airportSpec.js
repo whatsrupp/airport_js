@@ -7,15 +7,19 @@ describe('Airport', function() {
   describe('#land', function() {
 
     beforeEach(function(){
-      plane = {land: function(){return null;}}
+      plane = {
+        land: function(airport){
+          return null;
+        }
+      }
       airport = new Airport;
     });
 
     it('instructs plane to land', function(){
       spyOn(plane, 'land')
       airport.land(plane)
-      expect(plane.land()).toHaveBeenCalled();
-    })
+      expect(plane.land).toHaveBeenCalled();
+    });
 
   });
 
