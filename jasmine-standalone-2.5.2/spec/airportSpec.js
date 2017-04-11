@@ -1,28 +1,22 @@
 describe('Airport', function() {
 
   var airport;
-  var plane = jasmine.createSpy('plane', ['land', 'take_off']);
-  spyOn(plane, 'land').andReturn(null)
-  // plane.land.andCallFake(function() {
-  //   return null;
-  // });
-  // plane.take_off.andCallFake(function(){
-  //   return null;
-  // });
+  // var plane = jasmine.createSpy('plane', ['land', 'take_off']);
 
-  beforeEach(function(){
-    plane = {
-      land: function(){
-        return null;
-      }
-    }
-    
-  });
 
   describe('#land', function() {
-    it('instructs', function() {
-      expect(plane.land).toBeNull();
+
+    beforeEach(function(){
+      plane = {land: function(){return null;}}
     });
+
+    it('instructs plane to land', function(){
+      spyOn(plane, 'land')
+      debugger;
+      airport.land(plane)
+      expect(plane.land()).toHaveBeenCalled();
+    })
+
   });
 
 
