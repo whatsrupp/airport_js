@@ -8,11 +8,11 @@ describe('Airport', function() {
 
     beforeEach(function(){
       plane = {land: function(){return null;}}
+      airport = new Airport;
     });
 
     it('instructs plane to land', function(){
       spyOn(plane, 'land')
-      debugger;
       airport.land(plane)
       expect(plane.land()).toHaveBeenCalled();
     })

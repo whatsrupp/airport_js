@@ -1,4 +1,4 @@
-decribe('Airplane', function(){
+describe('Airplane', function(){
 
   var plane;
   var airport;
@@ -8,14 +8,13 @@ decribe('Airplane', function(){
     airport = jasmine.createSpy('airport');
   });
 
-  describe('#take-off', function(){
+  describe('#land', function(){
 
-    it('takes off', function(){
-
-
-    })
-
-  })
+    it('lands at airport', function(){
+      plane.land(airport);
+      expect(plane.airport).toEqual(airport);
+    });
+  });
 
 
 
